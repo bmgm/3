@@ -3,7 +3,7 @@ $(document).ready(function($){
 	$(window).scroll(function(){
 		$scrol = $(document).scrollTop();
 		console.log($scrol);
-		if ($scrol > 60)
+		if ($scrol > 20)
 		{
 			$('.navbar').addClass('shrink');
 			$('.navbar').addClass('navbar-fixed-top');
