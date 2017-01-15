@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.wrrapNavbar {
+  position: absolute;
+  width: 100%; }
+
+@media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
+  .collapsing {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    background-color: pink; }
+
+  .in {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    background-color: rgba(255, 145, 130, 0.7); } }
+.navbar-default {
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+  border-bottom: 0px;
+  border: 0px;
+  padding: 20px 0 0 0;
+  margin: 0;
+  border-radius: 0;
+  height: 100px; }
+  .navbar-default .navbar-brand {
+    color: #fff;
+    margin-left: 30%;
+    font-size: 25px;
+    font-weight: 200;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out; }
+    @media (max-width: 767px) {
+      .navbar-default .navbar-brand {
+        margin: 0 0 0 10px;
+        display: block;
+        float: none;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 200; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .navbar-default .navbar-brand {
+        font-size: 22px; } }
+    .navbar-default .navbar-brand span {
+      color: #00ffe7;
+      font-size: 60px;
+      font-weight: 100;
+      -webkit-transition: all 0.2s ease-out;
+      -moz-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+      @media (max-width: 767px) {
+        .navbar-default .navbar-brand span {
+          font-size: 30px;
+          font-weight: 200; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .navbar-default .navbar-brand span {
+          font-size: 50px; } }
+    .navbar-default .navbar-brand:hover {
+      color: #fff;
+      border-bottom: 1px solid #fff; }
+  .navbar-default .open {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    background-color: #FAE9E9; }
+  .navbar-default .navbar-nav > li > a {
+    color: #fff;
+    font-size: 16px; }
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    background: transparent;
+    color: #00ffe7; }
+  .navbar-default .navbar-right {
+    float: right !important;
+    margin-right: 5% !important; }
+
+.shrink {
+  background-color: rgba(255, 145, 130, 0.7) !important;
+  height: 50px;
+  padding-top: 0;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+  .shrink .navbar-brand {
+    font-size: 20px;
+    font-weight: 200; }
+    .shrink .navbar-brand span {
+      font-size: 25px;
+      font-weight: 400; }
+
+.firstSection {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.76), transparent), url(../img/bgb.jpg);
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#portfolio, #about, #contact {
+  width: 100%;
+  height: 100vh; }
+
+#portfolio {
+  background-color: #5a5a5a; }
+
+#about {
+  background-color: #ccc; }
+
+#contact {
+  background-color: #417b6e; }
