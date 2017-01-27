@@ -1,0 +1,54 @@
+@import "util/varfun"
+
+#carousel
+	font-family: "Josefin Slab"
+	font-size: 4.5em
+	@media #{$smartphones}
+		font-size: 3.5em
+	text-align: center
+	font-style: italic
+
+.carousel-fade
+	.carousel-inner
+		.item
+			padding-top: 35vh
+			@media #{$smartphones}
+				padding-top: 30vh
+
+			transition-property: opacity
+
+		.item, .active.left, .active.right
+			opacity: 0
+
+		.active, .next.left, .prev.right
+			opacity: 1
+
+		.next, .prev, .active.left, .active.right
+			left: 0
+			transform: translate3d(0, 0, 0)
+
+	.carousel-control
+		z-index: 2
+
+
+.carousel, .carousel-inner, .carousel-inner .item
+	height: 100vh
+
+.item:nth-child(1)
+	background: #74C390
+.item:nth-child(2)
+	background: #51BCE8
+.item:nth-child(3)
+	background: #E46653
+.item:nth-child(4)
+	background: #5a5a5a
+
+
+// #myCarousel
+// 	padding: 20% 5% 0 5%
+// .carousel-inner
+// 	border: 2px solid
+// 	p
+// 		font-size: 4em
+// 		font-family: "Josefin Slab"
+// 		font-style: italic

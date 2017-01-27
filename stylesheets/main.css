@@ -5,10 +5,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.wrrapNavbar {
-  position: absolute;
-  width: 100%; }
-
 @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
   .collapsing {
     -webkit-transition: all 0.2s ease-out;
@@ -22,7 +18,7 @@
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
-    background-color: rgba(255, 145, 130, 0.7); } }
+    background-color: #3CBDBD; } }
 .navbar-default {
   font-family: "Roboto", sans-serif;
   background-color: transparent;
@@ -91,7 +87,7 @@
     margin-right: 5% !important; }
 
 .shrink {
-  background-color: rgba(255, 145, 130, 0.7) !important;
+  background-color: #3CBDBD !important;
   height: 50px;
   padding-top: 0;
   -webkit-transition: all 0.5s ease-out;
@@ -105,10 +101,102 @@
       font-size: 25px;
       font-weight: 400; }
 
+/**
+ *   Here's where everything gets included. You don't need
+ *   to change anything here, and doing so might break
+ *   stuff. Here be dragons and all that.
+ */
+/**
+ *   Default variables
+ *
+ *   While these can be set with JavaScript, it's probably
+ *   better and faster to just set them here, compile to
+ *   CSS and include that instead to use some of that
+ *   hardware-accelerated goodness.
+ */
+.unslider {
+  overflow: auto;
+  margin: 0;
+  padding: 0; }
+  .unslider-wrap {
+    position: relative; }
+    .unslider-wrap.unslider-carousel > li {
+      float: left; }
+  .unslider-vertical > ul {
+    height: 100%; }
+  .unslider-vertical li {
+    float: none;
+    width: 100%; }
+  .unslider-fade {
+    position: relative; }
+    .unslider-fade .unslider-wrap li {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      z-index: 8; }
+      .unslider-fade .unslider-wrap li.unslider-active {
+        z-index: 10; }
+  .unslider ul, .unslider ol, .unslider li {
+    list-style: none;
+    /* Reset any weird spacing */
+    margin: 0;
+    padding: 0;
+    border: none; }
+  .unslider-arrow {
+    position: absolute;
+    left: 20px;
+    z-index: 2;
+    cursor: pointer; }
+    .unslider-arrow.next {
+      left: auto;
+      right: 20px; }
+
+#carousel {
+  font-family: "Josefin Slab";
+  font-size: 4.5em;
+  text-align: center;
+  font-style: italic; }
+  @media (max-width: 767px) {
+    #carousel {
+      font-size: 3.5em; } }
+
+.carousel-fade .carousel-inner .item {
+  padding-top: 35vh;
+  transition-property: opacity; }
+  @media (max-width: 767px) {
+    .carousel-fade .carousel-inner .item {
+      padding-top: 30vh; } }
+.carousel-fade .carousel-inner .item, .carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
+  opacity: 0; }
+.carousel-fade .carousel-inner .active, .carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right {
+  opacity: 1; }
+.carousel-fade .carousel-inner .next, .carousel-fade .carousel-inner .prev, .carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0); }
+.carousel-fade .carousel-control {
+  z-index: 2; }
+
+.carousel, .carousel-inner, .carousel-inner .item {
+  height: 100vh; }
+
+.item:nth-child(1) {
+  background: #74C390; }
+
+.item:nth-child(2) {
+  background: #51BCE8; }
+
+.item:nth-child(3) {
+  background: #E46653; }
+
+.item:nth-child(4) {
+  background: #5a5a5a; }
+
 .firstSection {
+  padding-top: 100px;
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.76), transparent), url(../img/bgb.jpg);
+  background: -webkit-linear-gradient(#546E7A, #ECEFF1);
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
@@ -119,10 +207,10 @@
   height: 100vh; }
 
 #portfolio {
-  background-color: #5a5a5a; }
+  background-color: #F3F9D2; }
 
 #about {
-  background-color: #ccc; }
+  background-color: #B0BEC5; }
 
 #contact {
-  background-color: #417b6e; }
+  background-color: #90A4AE; }
