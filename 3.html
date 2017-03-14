@@ -11,6 +11,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+
 
 	<link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
 
@@ -21,27 +24,27 @@
 </head>
 
 <body>
-	<section class="wrrapNavbar">
+	<section id="wrrapNavbar">
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#"><span style="font-family: 'Josefin Slab', serif;
-">Kshitij</span>Academy</a>
+					<a class="navbar-brand" href="#"><span style="font-family: 'Josefin Slab', serif;">Kshitij</span>Academy</a>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
-						<li><a href="#portfolio">Portfolio</a></li>
-						<li><a href="#about">About</a></li>
+						<li class="active"><a href="#hero-carousel">Home<span class="sr-only">(current)</span></a></li>
+						<li><a href="#aboutUs">About Us</a></li>
+						<li><a href="#subjects">Subjects</a></li>
+						<li><a href="#results">Results</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
@@ -51,8 +54,8 @@
 		</nav>
 	</section>
 
-	<section>
-		<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-ride="3000" data-pause="false">
+	<section id="hero-carousel">
+		<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000" data-pause="false">
 			<ol class="carousel-indicators">
 				<li data-target="#carousel" data-slide-to="0" class="active"></li>
 				<li data-target="#carousel" data-slide-to="1"></li>
@@ -79,18 +82,155 @@
 		</div>
 	</section>
 
-	<section id="home" class="firstSection">
-
+	<section id="aboutUs">
+		<div class="container">
+			<h1>Hi,</h1>
+			<h2>Lets work on your dreams. Together.</h2>
+			<h4>At <em>Kshitij Academy</em> we not only teach you about academic syllabus but also teach you about how to learn.<br>We give emphasis on building the base required for your dream engineering career.</h4><br>
+			<h4><b>Our Features</b></h4>
+			<div class="features">
+				<div class="row">
+					<div class="col-sm-6">
+						<ul class="custom-bullet">
+							<li>One-to-One communication with students.</li>
+							<li>Help and Assistance at every step</li>
+							<li>Monthly Parent-Teacher Meetings</li>
+							<li>Printed Study Material</li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						<ul class="custom-bullet">
+							<li>We organise talk sessions with speakers</li>
+							<li>Career and Personal Guidance for bright future</li>
+							<li>Access to large library of Reference Books</li>
+							<li>Peaceful and Friendly Environment</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
-	<section id="portfolio"></section>
-	<section id="about"></section>
-	<section id="contact"></section>
+
+	<section id="subjects">
+		<div class="container">
+		<h1>Subjects We Teach</h1><br>
+		<h4>We cover all subjects given by The Board Of Diploma.</h4>
+		<h4>We follow the syllabus and guidelines set by The Board Of Diploma.</h4>
+		<h4>We provide printed notes so you dont have to.</h4>
+		<h4>Regular Unit Tests are conducted. Multiple Preliminary Tests are also conducted before final exams.</h4><br>
+		<h4><b>Project Guidence for Third Year Students</b></h4><br>
+		<h4>Here are the subjects we teach you with : </h4><br>
+
+
+		<!-- <ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#firstyear">1<sup>st</sup> Year</a></li>
+			<li><a data-toggle="tab" href="#secondyear">2<sup>nd</sup> Year</a></li>
+			<li><a data-toggle="tab" href="#thirdyear">3<sup>rd</sup> Year</a></li>
+		</ul> -->
+		<div class="row row-centered">
+			<div class="col-xs-6 col-centered col-fixed">
+				<div class="paper">
+					<h4 class="comp">1<sup>st</sup> Year Subjects</h4>
+					<ul>
+						<li>Mathematics I</li>
+						<li>Mathematics II</li>
+						<li>Physics</li>
+						<li>Chemistry</li>
+						<li>Electrical</li>
+						<li>Electronics</li>
+						<li>Mechanics</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-xs-6 col-centered col-fixed">
+				<div class="paper">
+					<h4 class="it">2<sup>nd</sup> Year Subjects</h4>
+					<ul>
+						<li>Mathematics III</li>
+						<li>C Language</li>
+						<li>SOM</li>
+						<li>TOM</li>
+						<li>FM</li>
+						<li>Thermodynamics</li>
+						<li>Engineering Design</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- subjects here -->
+		</div><!-- end of subjects -->
+	</section>
+	<section id="team">
+		<div class="container">
+			<!-- <h1>Hi,</h1> -->
+			<h1>Meet our Team</h1>
+			<h3>We are a team of focused, committed, qualified and experienced professionals.</h3><br>
+			<div class="row row-centered">
+				<div class="col-xs-4 col-centered col-fixed card1">
+					<img class="face" src="assets/faces/1.png" alt="">
+					<h4>Shobhraj Bansode</h4>
+					<h5>B.E. Mech</h5>
+				</div>
+
+				<div class="col-xs-4 col-centered col-fixed card2">
+					<img class="face" src="assets/faces/2.png" alt="">
+					<h4>Pratik Bhise</h4>
+					<h5>B.E. Mech</h5>
+				</div>
+
+				<div class="col-xs-4 col-centered col-fixed card3">
+					<img class="face" src="assets/faces/3.png" alt="">
+					<h4>Prajakta Sakore</h4>
+					<h5>B.E. Comp</h5>
+				</div>
+
+				<div class="col-xs-4 col-centered col-fixed card4">
+					<img class="face" src="assets/faces/1.png" alt="">
+					<h4>Pratima Darde</h4>
+					<h5>B.E. E&TC</h5>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="results"></section>
+	<section id="contact">
+		<h1>Contact Us</h1>
+		<h3>For any inquiries, questions, feel free to get in touch</h3><br>
+		<div class="container">
+			<div class="row row-centered">
+				<div class="col-xs-4 col-centered col-fixed">
+					<img id="icon1" src="assets/icons/email.png" alt="email">
+					<h5><b>Email</b></h5>
+					<h5>kshitijacademy@gmail.com<br/>kshitijacademy@gmail.com</h5>
+				</div>
+				<div class="col-xs-4 col-centered col-fixed">
+					<img id="icon2" src="assets/icons/whatsapp.png" alt="whatsapp">
+					<h5><b>Mobile No.</b></h5>
+					<h5>9999112233<br/>9999112233</h5>
+				</div>
+			</div>
+			<div class="row row-centered">
+				<div class="col-xs-11 col-centered col-fixed1">
+					<img id="icon3" src="assets/icons/location.png" alt="location">
+					<h5><b>Address</b></h5>
+					<h5>Flat No.27, Anurang Bunglow, Near GPP College, Jawahar Nagar, <br>Shivajinagar, Maharashtra 411016</h5>
+				</div>
+			</div>
+		</div>
+
+		<div class="map-container">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.8207275936566!2d73.83168091500036!3d18.53700168739952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf7b0f70bbc3%3A0xed7980777450801c!2sKshitij+Academy!5e0!3m2!1sen!2sin!4v1489296988187" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</section>
 
 	<!-- /.container -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="scripts/mangesh.js"></script>
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbCsku_KZ1HouJiIZTxz7CyyMt8ftUlY4&callback=myMap"></script> -->
+
 
 </body>
 

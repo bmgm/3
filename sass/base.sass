@@ -2,32 +2,31 @@
 @import "util/varfun"
 
 @import "modules/navbar"
-@import "plugins/unslider/unslider"
 @import "modules/carousel"
+@import "modules/aboutUs"
+@import "modules/subjects"
+@import "modules/team"
+@import "modules/contact"
+@import "util/typography"
+body
+	font-family: 'Roboto', sans-serif
+	// font-family: 'Montserrat', sans-serif
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
 
 
 
-.firstSection
-	padding-top: 100px
-	height: 100vh
-	width: 100%
-	background: -webkit-linear-gradient(#546E7A, #ECEFF1)
-	// background-color: linear-gradient(rgba(0, 0, 0, 0.76)),rgba(0, 0, 0, 0))
-	// background-color: #ECEFF1
-	background-position: center
-	-webkit-background-size: cover
-	background-size: cover
-	background-repeat: no-repeat
-
-#portfolio, #about, #contact
+#results, #contact
 	width: 100%
 	height: 100vh
 
-#portfolio
-	background-color: $portfolio-bg
+#subjects
+	//background-color: $subjects-bg
 
-#about
-	background-color: $about-bg
+#team
+
+#results
+	background-color: $contact-bg
 
 #contact
-	background-color: $contact-bg
+	// background-color: $contact-bg

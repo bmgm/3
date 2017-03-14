@@ -1,96 +1,107 @@
+@import "util/varfun"
+#wrrapNavbar
+
+	.navbar-default
+		font-family: 'Roboto', sans-serif
+		background-color: transparent
+		border-bottom: 0px
+		border: 0px
+		padding: 20px 0 0 0
+		margin: 0
+		border-radius: 0
+		height: 100px
+
+		.navbar-brand
+			color: $navbar-item
+			margin-left: 30%
+			font-size: 25px
+			font-weight: 200
+			@media #{$smartphones}
+				margin: 0 0 0 10px
+				display: block
+				float: none
+				text-align: center
+				font-size: 18px
+				font-weight: 200
+			@media #{$tablets}
+				font-size: 22px
+
+			span
+				color: $navbar-item-over
+				font-size: 60px
+				font-weight: 100
+				@media #{$smartphones}
+					font-size: 30px
+					font-weight: 200
+				@media #{$tablets}
+					font-size: 50px
+				+trans(0.2s)
+				&:hover
+					color: $navbar-item
+
+			&:hover
+				color: $navbar-item-over
+				span
+					color: $navbar-item
+
+		.navbar-toggle
+			border-color: transparent
+			&:hover, &:focus
+				background-color: transparent
+			.icon-bar
+				background-color: lightgreen
+
+		@media #{$smartphones}, #{$tablets}
+			.open
+				+trans(0.2s)
+				background-color: $shrink-navbar-bg
+				opacity: 0.43
+			.collapsing
+				+trans(0.2s)
+				background-color: pink
+			.in
+				+trans(0.2s)
+				background-color: $shrink-navbar-bg
+
+		.navbar-right
+			float: right!important
+			margin-right: 15% !important
 
 
-// .wrrapNavbar
-// 	position: absolute
-// 	width: 100%
-// 	border: 3px solid red
-// 	clear: both
+		.navbar-nav
+			a
+				color: $navbar-item
 
-@media #{$smartphones}, #{$tablets}
-	.collapsing
-		+trans(0.2s)
-		background-color: pink
-	.in
-		+trans(0.2s)
-		background-color: $shrink-navbar-bg
+			a:hover,.active>a,.active>a:focus,.active>a:hover
+				color: $navbar-item-over
+				background-color: transparent
 
-.navbar-default
-	font-family: 'Roboto', sans-serif
-	background-color: transparent
-	border-bottom: 0px
-	border: 0px
-	padding: 20px 0 0 0
-	margin: 0
-	border-radius: 0
-	height: 100px
 
-	.navbar-brand
-		color: $navbar-item
-		margin-left: 30%
-		font-size: 25px
-		font-weight: 200
+
+
+	.shrink
+		background-color: $shrink-navbar-bg !important
+		height: 50px
+		padding-top: 0
 		+trans(0.5s)
 
-		@media #{$smartphones}
-			margin: 0 0 0 10px
-			display: block
-			float: none
-			text-align: center
-			font-size: 18px
+		.navbar-brand
+			font-size: 20px
 			font-weight: 200
-
-		@media #{$tablets}
-			font-size: 22px
-
-		+trans(0.2s)
-
-		span
-			color: $navbar-item-over
-			font-size: 60px
-			font-weight: 100
-
-			@media #{$smartphones}
-				font-size: 30px
-				font-weight: 200
-
-			@media #{$tablets}
-				font-size: 50px
-
-			+trans(0.2s)
-
-		&:hover
-			color: $navbar-item
-			border-bottom: 1px solid $navbar-item
-
-	.open
-		+trans(0.2s)
-
-		background-color: #FAE9E9
+			span
+				font-size: 25px
+				font-weight: 400
 
 
-	.navbar-nav>li>a
-		color: $navbar-item
-		//background-color: $shrink-navbar-bg; //transparent
-		font-size: 16px
-
-	.navbar-nav>li>a:hover,.navbar-nav>.active>a,.navbar-nav>.active>a:focus,.navbar-nav>.active>a:hover
-		background: transparent
-		color: $navbar-item-over
-
-	.navbar-right
-		float: right!important
-		margin-right: 5% !important
 
 
-.shrink
-	background-color: $shrink-navbar-bg !important
-	height: 50px
-	padding-top: 0
-	+trans(0.5s)
 
-	.navbar-brand
-		font-size: 20px
-		font-weight: 200
-		span
-			font-size: 25px
-			font-weight: 400
+// .navbar-nav>li>a
+
+	//background-color: $shrink-navbar-bg; //transparent
+
+
+// .navbar-nav>li>a:hover,.navbar-nav>.active>a,.navbar-nav>.active>a:focus,.navbar-nav>.active>a:hover
+
+// 	color: $navbar-item-over
+// /* Rectangle 2: */ opacity: 0.43; background: #3CBDBD;

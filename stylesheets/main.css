@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -5,21 +6,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-@media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
-  .collapsing {
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-    background-color: pink; }
-
-  .in {
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-    background-color: #3CBDBD; } }
-.navbar-default {
+#wrrapNavbar .navbar-default {
   font-family: "Roboto", sans-serif;
   background-color: transparent;
   border-bottom: 0px;
@@ -28,21 +15,13 @@
   margin: 0;
   border-radius: 0;
   height: 100px; }
-  .navbar-default .navbar-brand {
+  #wrrapNavbar .navbar-default .navbar-brand {
     color: #fff;
     margin-left: 30%;
     font-size: 25px;
-    font-weight: 200;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out; }
+    font-weight: 200; }
     @media (max-width: 767px) {
-      .navbar-default .navbar-brand {
+      #wrrapNavbar .navbar-default .navbar-brand {
         margin: 0 0 0 10px;
         display: block;
         float: none;
@@ -50,9 +29,9 @@
         font-size: 18px;
         font-weight: 200; } }
     @media (min-width: 768px) and (max-width: 991px) {
-      .navbar-default .navbar-brand {
+      #wrrapNavbar .navbar-default .navbar-brand {
         font-size: 22px; } }
-    .navbar-default .navbar-brand span {
+    #wrrapNavbar .navbar-default .navbar-brand span {
       color: #00ffe7;
       font-size: 60px;
       font-weight: 100;
@@ -61,32 +40,53 @@
       -o-transition: all 0.2s ease-out;
       transition: all 0.2s ease-out; }
       @media (max-width: 767px) {
-        .navbar-default .navbar-brand span {
+        #wrrapNavbar .navbar-default .navbar-brand span {
           font-size: 30px;
           font-weight: 200; } }
       @media (min-width: 768px) and (max-width: 991px) {
-        .navbar-default .navbar-brand span {
+        #wrrapNavbar .navbar-default .navbar-brand span {
           font-size: 50px; } }
-    .navbar-default .navbar-brand:hover {
-      color: #fff;
-      border-bottom: 1px solid #fff; }
-  .navbar-default .open {
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-    background-color: #FAE9E9; }
-  .navbar-default .navbar-nav > li > a {
-    color: #fff;
-    font-size: 16px; }
-  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-    background: transparent;
-    color: #00ffe7; }
-  .navbar-default .navbar-right {
+      #wrrapNavbar .navbar-default .navbar-brand span:hover {
+        color: #fff; }
+    #wrrapNavbar .navbar-default .navbar-brand:hover {
+      color: #00ffe7; }
+      #wrrapNavbar .navbar-default .navbar-brand:hover span {
+        color: #fff; }
+  #wrrapNavbar .navbar-default .navbar-toggle {
+    border-color: transparent; }
+    #wrrapNavbar .navbar-default .navbar-toggle:hover, #wrrapNavbar .navbar-default .navbar-toggle:focus {
+      background-color: transparent; }
+    #wrrapNavbar .navbar-default .navbar-toggle .icon-bar {
+      background-color: lightgreen; }
+  @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
+    #wrrapNavbar .navbar-default .open {
+      -webkit-transition: all 0.2s ease-out;
+      -moz-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+      background-color: #3CBDBD;
+      opacity: 0.43; }
+    #wrrapNavbar .navbar-default .collapsing {
+      -webkit-transition: all 0.2s ease-out;
+      -moz-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+      background-color: pink; }
+    #wrrapNavbar .navbar-default .in {
+      -webkit-transition: all 0.2s ease-out;
+      -moz-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+      background-color: #3CBDBD; } }
+  #wrrapNavbar .navbar-default .navbar-right {
     float: right !important;
-    margin-right: 5% !important; }
-
-.shrink {
+    margin-right: 15% !important; }
+  #wrrapNavbar .navbar-default .navbar-nav a {
+    color: #fff; }
+  #wrrapNavbar .navbar-default .navbar-nav a:hover, #wrrapNavbar .navbar-default .navbar-nav .active > a, #wrrapNavbar .navbar-default .navbar-nav .active > a:focus, #wrrapNavbar .navbar-default .navbar-nav .active > a:hover {
+    color: #00ffe7;
+    background-color: transparent; }
+#wrrapNavbar .shrink {
   background-color: #3CBDBD !important;
   height: 50px;
   padding-top: 0;
@@ -94,79 +94,29 @@
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
-  .shrink .navbar-brand {
+  #wrrapNavbar .shrink .navbar-brand {
     font-size: 20px;
     font-weight: 200; }
-    .shrink .navbar-brand span {
+    #wrrapNavbar .shrink .navbar-brand span {
       font-size: 25px;
       font-weight: 400; }
 
-/**
- *   Here's where everything gets included. You don't need
- *   to change anything here, and doing so might break
- *   stuff. Here be dragons and all that.
- */
-/**
- *   Default variables
- *
- *   While these can be set with JavaScript, it's probably
- *   better and faster to just set them here, compile to
- *   CSS and include that instead to use some of that
- *   hardware-accelerated goodness.
- */
-.unslider {
-  overflow: auto;
-  margin: 0;
-  padding: 0; }
-  .unslider-wrap {
-    position: relative; }
-    .unslider-wrap.unslider-carousel > li {
-      float: left; }
-  .unslider-vertical > ul {
-    height: 100%; }
-  .unslider-vertical li {
-    float: none;
-    width: 100%; }
-  .unslider-fade {
-    position: relative; }
-    .unslider-fade .unslider-wrap li {
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      z-index: 8; }
-      .unslider-fade .unslider-wrap li.unslider-active {
-        z-index: 10; }
-  .unslider ul, .unslider ol, .unslider li {
-    list-style: none;
-    /* Reset any weird spacing */
-    margin: 0;
-    padding: 0;
-    border: none; }
-  .unslider-arrow {
-    position: absolute;
-    left: 20px;
-    z-index: 2;
-    cursor: pointer; }
-    .unslider-arrow.next {
-      left: auto;
-      right: 20px; }
-
-#carousel {
+#hero-carousel {
+  width: 100%;
   font-family: "Josefin Slab";
-  font-size: 4.5em;
+  font-size: 3.5em;
   text-align: center;
   font-style: italic; }
   @media (max-width: 767px) {
-    #carousel {
-      font-size: 3.5em; } }
+    #hero-carousel {
+      font-size: 2em; } }
 
 .carousel-fade .carousel-inner .item {
-  padding-top: 35vh;
+  padding-top: 40vh;
   transition-property: opacity; }
   @media (max-width: 767px) {
     .carousel-fade .carousel-inner .item {
-      padding-top: 30vh; } }
+      padding-top: 38vh; } }
 .carousel-fade .carousel-inner .item, .carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
   opacity: 0; }
 .carousel-fade .carousel-inner .active, .carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right {
@@ -177,7 +127,7 @@
 .carousel-fade .carousel-control {
   z-index: 2; }
 
-.carousel, .carousel-inner, .carousel-inner .item {
+.item {
   height: 100vh; }
 
 .item:nth-child(1) {
@@ -192,25 +142,241 @@
 .item:nth-child(4) {
   background: #5a5a5a; }
 
-.firstSection {
-  padding-top: 100px;
-  height: 100vh;
+#aboutUs {
+  height: 100%;
   width: 100%;
-  background: -webkit-linear-gradient(#546E7A, #ECEFF1);
-  background-position: center;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  align-items: center;
+  padding: 3.125rem 0;
+  background-color: #ECEFF1;
+  font-family: "Montserrat", sans-serif; }
+  #aboutUs h1, #aboutUs h2, #aboutUs h3, #aboutUs h4 {
+    text-align: center; }
+  #aboutUs h1 {
+    font-weight: 600; }
+  #aboutUs h2 {
+    font-weight: 600; }
 
-#portfolio, #about, #contact {
+.features {
+  padding-left: 15%;
+  line-height: 45px; }
+
+.custom-bullet li {
+  display: block; }
+
+.custom-bullet li:before {
+  /*Using a Bootstrap glyphicon as the bullet point */
+  content: "";
+  font-family: "Glyphicons Halflings";
+  font-size: 9px;
+  float: left;
+  margin-top: 0;
+  margin-left: -25px;
+  color: #CCCCCC; }
+
+#subjects {
+  background-color: #E6E6FA;
+  height: 100%;
+  width: 100%;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  font-family: "Montserrat", sans-serif; }
+  #subjects h1, #subjects h2 {
+    font-weight: 600; }
+
+section#subjects .paper {
+  padding: 20px 20px 20px 40px;
+  margin: 10px 30px 30px 0;
+  width: 290px;
+  height: 100%;
+  background: #FFFFFF;
+  box-shadow: 10px 15px 30px 14px rgba(63, 89, 129, 0.12);
+  border-radius: 8px; }
+  section#subjects .paper:hover {
+    box-shadow: 0px 0px 30px 14px rgba(255, 95, 238, 0.2); }
+  section#subjects .paper ul {
+    padding-left: 20px; }
+  section#subjects .paper .comp {
+    color: #9013FE; }
+  section#subjects .paper .it {
+    color: #B42ED9; }
+  section#subjects .paper .etc {
+    color: #00ACED; }
+  section#subjects .paper .mech {
+    color: #4A90E2; }
+section#subjects .row-centered {
+  text-align: center; }
+section#subjects .col-centered {
+  display: inline-block;
+  float: none;
+  /* reset the text-align */
+  text-align: left;
+  /* inline-block space fix */
+  margin-right: 0px; }
+section#subjects .col-fixed {
+  /* custom width */
+  width: 320px; }
+
+#team {
+  width: 100%;
+  height: 100%;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  font-family: "Montserrat";
+  text-align: center; }
+  #team h1, #team h2 {
+    font-weight: 600; }
+  #team .row {
+    text-align: center; }
+    #team .row .col-centered {
+      text-align: center;
+      display: inline-block;
+      float: none;
+      margin: 10px; }
+    #team .row .col-fixed {
+      width: 300px;
+      height: 210px; }
+    #team .row .face {
+      height: 100px;
+      width: 100px;
+      margin: 15px 10px 10px 10px; }
+    #team .row .card1 {
+      padding: 10px;
+      background: #9FADE4;
+      box-shadow: 10px 10px 20px 0px rgba(172, 189, 255, 0.31);
+      border-radius: 8px; }
+    #team .row .card2 {
+      padding: 10px;
+      background: #82C7EB;
+      box-shadow: 10px 10px 20px 0px rgba(120, 209, 255, 0.31);
+      border-radius: 8px; }
+    #team .row .card3 {
+      padding: 10px;
+      background: #CEAFE7;
+      box-shadow: 10px 10px 20px 0px rgba(193, 117, 255, 0.31);
+      border-radius: 8px; }
+    #team .row .card4 {
+      padding: 10px;
+      background: #FFD3E8;
+      box-shadow: 10px 10px 20px 0px rgba(250, 175, 210, 0.31);
+      border-radius: 8px; }
+
+section#contact {
+  height: 100%;
+  width: 100%;
+  padding: 3.125rem 0;
+  font-family: "Montserrat", sans-serif; }
+  section#contact h1 {
+    font-weight: 600;
+    text-align: center; }
+  section#contact h3 {
+    text-align: center; }
+  section#contact .map-container {
+    margin-top: 30px; }
+    section#contact .map-container iframe {
+      pointer-events: none; }
+    section#contact .map-container iframe.clicked {
+      pointer-events: auto; }
+  section#contact .row {
+    text-align: center; }
+    section#contact .row .col-centered {
+      text-align: left;
+      display: inline-block;
+      float: none;
+      margin: 10px;
+      border: 2px solid #eee;
+        border-radius: 5px; }
+      section#contact .row .col-centered:hover {
+        border: 2px solid #eee;
+          border-radius: 10px; }
+      section#contact .row .col-centered h5 {
+        padding-top: 3px;
+        font-family: Roboto;
+        letter-spacing: 1px; }
+    section#contact .row .col-fixed {
+      width: 320px; }
+    section#contact .row .col-fixed1 {
+      max-width: 660px; }
+@media(max-width:678px) {
+  section#contact .row .col-fixed1 {
+    width: 320px; } }
+    section#contact .row #icon1 {
+      float: left;
+      width: 40px;
+      margin: 1.7em 20px 1.7em 10px; }
+    section#contact .row #icon2 {
+      float: left;
+      width: 40px;
+      margin: 1.3em 20px 1.3em 10px; }
+    section#contact .row #icon3 {
+      float: left;
+      width: 30px;
+      margin: 2.2em 30px 2.2em 10px; }
+
+h1 {
+  font-size: 2em;
+  /* 2x body copy size = 32px */
+  line-height: 1.25;
+  /* 45px / 36px */ }
+
+@media (min-width: 43.75em) {
+  h1 {
+    font-size: 2.5em;
+    /* 2.5x body copy size = 40px */
+    line-height: 1.125; } }
+@media (min-width: 56.25em) {
+  h1 {
+    font-size: 3em;
+    /* 3x body copy size = 48px */
+    line-height: 1.05;
+    /* keep to a multiple of the 20px line height and something more appropriate for display headings */ } }
+h2 {
+  font-size: 1.625em;
+  /* 1.625x body copy size = 26px */
+  line-height: 1.15385;
+  /* 30px / 26px */ }
+
+@media (min-width: 43.75em) {
+  h2 {
+    font-size: 2em;
+    /* 2x body copy size = 32px */
+    line-height: 1.25; } }
+@media (min-width: 56.25em) {
+  h2 {
+    font-size: 2.25em;
+    /* 2.25x body copy size = 36px */
+    line-height: 1.25; } }
+h3 {
+  font-size: 1.375em;
+  /* 1.375x body copy size = 22px */
+  line-height: 1.13636;
+  /* 25px / 22px */ }
+
+@media (min-width: 43.75em) {
+  h3 {
+    font-size: 1.5em;
+    /* 1.5x body copy size = 24px */
+    line-height: 1.25; } }
+@media (min-width: 56.25em) {
+  h3 {
+    font-size: 1.75em;
+    /* 1.75x body copy size = 28px */
+    line-height: 1.25; } }
+h4 {
+  font-size: 1.125em;
+  /* 1.125x body copy size = 18px */
+  line-height: 1.11111; }
+
+@media (min-width: 43.75em) {
+  line-height: 1.22222;
+  /* (22px / 18px */ }
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+#results, #contact {
   width: 100%;
   height: 100vh; }
 
-#portfolio {
-  background-color: #F3F9D2; }
-
-#about {
-  background-color: #B0BEC5; }
-
-#contact {
+#results {
   background-color: #90A4AE; }
