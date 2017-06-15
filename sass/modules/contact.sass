@@ -1,0 +1,54 @@
+section#contact
+	height: 100%
+	width: 100%
+	padding: $sectionPadding 0 0 0
+	// font-family: 'Montserrat', sans-serif
+	h1
+		font-weight: 700
+		text-align: center
+	h3
+		text-align: center
+
+	.map-container
+		margin-top: 30px
+		iframe
+			pointer-events: none
+		iframe.clicked
+			pointer-events: auto
+
+	.row
+		text-align: center
+		.col-centered
+			text-align: left
+			display: inline-block
+			float: none
+			margin: 10px
+			border: 2px solid #eee
+				radius: 5px
+			&:hover
+				border: 2px solid #eee
+					radius: 10px
+			h5
+				padding-top: 3px
+				font-family: $roboto
+				letter-spacing: 0.9px
+		.col-fixed
+			width: 300px
+		.col-fixed1
+			max-width: 620px
+			@media(max-width:643px)
+				width: 300px
+
+		#icon1
+			float: left
+			width: 40px
+			margin: 1.7em 20px 1.7em 10px
+		#icon2
+			float: left
+			width: 40px
+			margin: 1.3em 20px 1.3em 10px
+		#icon3
+			float: left
+			width: 30px
+			margin: 2.2em 30px 2.2em 10px
+			// margin: 20px 20px 10px 15px

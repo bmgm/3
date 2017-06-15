@@ -6,6 +6,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* Kshitij: */
 #wrrapNavbar .navbar-default {
   font-family: "Roboto", sans-serif;
   background-color: transparent;
@@ -16,23 +17,22 @@
   border-radius: 0;
   height: 100px; }
   #wrrapNavbar .navbar-default .navbar-brand {
-    color: #fff;
+    color: #3E3E3E;
     margin-left: 30%;
     font-size: 25px;
-    font-weight: 200; }
+    font-weight: 300; }
     @media (max-width: 767px) {
       #wrrapNavbar .navbar-default .navbar-brand {
         margin: 0 0 0 10px;
         display: block;
         float: none;
         text-align: center;
-        font-size: 18px;
-        font-weight: 200; } }
+        font-size: 18px; } }
     @media (min-width: 768px) and (max-width: 991px) {
       #wrrapNavbar .navbar-default .navbar-brand {
         font-size: 22px; } }
     #wrrapNavbar .navbar-default .navbar-brand span {
-      color: #00ffe7;
+      color: black;
       font-size: 60px;
       font-weight: 100;
       -webkit-transition: all 0.2s ease-out;
@@ -42,16 +42,16 @@
       @media (max-width: 767px) {
         #wrrapNavbar .navbar-default .navbar-brand span {
           font-size: 30px;
-          font-weight: 200; } }
+          font-weight: 400; } }
       @media (min-width: 768px) and (max-width: 991px) {
         #wrrapNavbar .navbar-default .navbar-brand span {
           font-size: 50px; } }
       #wrrapNavbar .navbar-default .navbar-brand span:hover {
-        color: #fff; }
+        color: white; }
     #wrrapNavbar .navbar-default .navbar-brand:hover {
-      color: #00ffe7; }
+      color: white; }
       #wrrapNavbar .navbar-default .navbar-brand:hover span {
-        color: #fff; }
+        color: white; }
   #wrrapNavbar .navbar-default .navbar-toggle {
     border-color: transparent; }
     #wrrapNavbar .navbar-default .navbar-toggle:hover, #wrrapNavbar .navbar-default .navbar-toggle:focus {
@@ -80,11 +80,19 @@
       background-color: #3CBDBD; } }
   #wrrapNavbar .navbar-default .navbar-right {
     float: right !important;
-    margin-right: 15% !important; }
+    margin-right: 5% !important; }
+    @media (max-width: 768px) {
+      #wrrapNavbar .navbar-default .navbar-right {
+        text-align: left;
+        font-size: 18px;
+        margin-right: 30%; } }
   #wrrapNavbar .navbar-default .navbar-nav a {
-    color: #fff; }
+    color: rgba(255, 255, 255, 0.8); }
+    @media (max-width: 768px) {
+      #wrrapNavbar .navbar-default .navbar-nav a {
+        margin: 15px; } }
   #wrrapNavbar .navbar-default .navbar-nav a:hover, #wrrapNavbar .navbar-default .navbar-nav .active > a, #wrrapNavbar .navbar-default .navbar-nav .active > a:focus, #wrrapNavbar .navbar-default .navbar-nav .active > a:hover {
-    color: #00ffe7;
+    color: #fff;
     background-color: transparent; }
 #wrrapNavbar .shrink {
   background-color: #3CBDBD !important;
@@ -95,11 +103,37 @@
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
   #wrrapNavbar .shrink .navbar-brand {
-    font-size: 20px;
-    font-weight: 200; }
+    font-size: 18px;
+    font-weight: 300; }
     #wrrapNavbar .shrink .navbar-brand span {
-      font-size: 25px;
-      font-weight: 400; }
+      font-size: 30px;
+      font-weight: 500; }
+
+.navbar-toggle {
+  border: none;
+  background: transparent !important; }
+  .navbar-toggle:hover {
+    background: transparent !important; }
+  .navbar-toggle .icon-bar {
+    width: 22px;
+    transition: all 0.2s; }
+  .navbar-toggle .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%; }
+  .navbar-toggle .middle-bar {
+    opacity: 0; }
+  .navbar-toggle .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%; }
+
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0); }
+
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1; }
+
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0); }
 
 #hero-carousel {
   width: 100%;
@@ -140,21 +174,20 @@
   background: #E46653; }
 
 .item:nth-child(4) {
-  background: #5a5a5a; }
+  background: #A065C3; }
 
 #aboutUs {
   height: 100%;
   width: 100%;
   align-items: center;
   padding: 3.125rem 0;
-  background-color: #ECEFF1;
-  font-family: "Montserrat", sans-serif; }
+  background-color: #ECEFF1; }
   #aboutUs h1, #aboutUs h2, #aboutUs h3, #aboutUs h4 {
     text-align: center; }
   #aboutUs h1 {
-    font-weight: 600; }
+    font-weight: 700; }
   #aboutUs h2 {
-    font-weight: 600; }
+    font-weight: 700; }
 
 .features {
   padding-left: 15%;
@@ -178,23 +211,28 @@
   height: 100%;
   width: 100%;
   padding-top: 3.125rem;
-  padding-bottom: 3.125rem;
-  font-family: "Montserrat", sans-serif; }
+  padding-bottom: 3.125rem; }
   #subjects h1, #subjects h2 {
-    font-weight: 600; }
+    font-weight: 700; }
 
 section#subjects .paper {
   padding: 20px 20px 20px 40px;
   margin: 10px 30px 30px 0;
   width: 290px;
   height: 100%;
-  background: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.4);
   box-shadow: 10px 15px 30px 14px rgba(63, 89, 129, 0.12);
   border-radius: 8px; }
   section#subjects .paper:hover {
     box-shadow: 0px 0px 30px 14px rgba(255, 95, 238, 0.2); }
+  section#subjects .paper h4 {
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 5px; }
   section#subjects .paper ul {
     padding-left: 20px; }
+    section#subjects .paper ul li {
+      font-size: 16px; }
   section#subjects .paper .comp {
     color: #9013FE; }
   section#subjects .paper .it {
@@ -221,10 +259,9 @@ section#subjects .col-fixed {
   height: 100%;
   padding-top: 3.125rem;
   padding-bottom: 3.125rem;
-  font-family: "Montserrat";
   text-align: center; }
   #team h1, #team h2 {
-    font-weight: 600; }
+    font-weight: 700; }
   #team .row {
     text-align: center; }
     #team .row .col-centered {
@@ -263,10 +300,9 @@ section#subjects .col-fixed {
 section#contact {
   height: 100%;
   width: 100%;
-  padding: 3.125rem 0;
-  font-family: "Montserrat", sans-serif; }
+  padding: 3.125rem 0 0 0; }
   section#contact h1 {
-    font-weight: 600;
+    font-weight: 700;
     text-align: center; }
   section#contact h3 {
     text-align: center; }
@@ -290,15 +326,15 @@ section#contact {
           border-radius: 10px; }
       section#contact .row .col-centered h5 {
         padding-top: 3px;
-        font-family: Roboto;
-        letter-spacing: 1px; }
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 0.9px; }
     section#contact .row .col-fixed {
-      width: 320px; }
+      width: 300px; }
     section#contact .row .col-fixed1 {
-      max-width: 660px; }
-@media(max-width:678px) {
+      max-width: 620px; }
+@media(max-width:643px) {
   section#contact .row .col-fixed1 {
-    width: 320px; } }
+    width: 300px; } }
     section#contact .row #icon1 {
       float: left;
       width: 40px;
@@ -311,6 +347,86 @@ section#contact {
       float: left;
       width: 30px;
       margin: 2.2em 30px 2.2em 10px; }
+
+footer {
+  min-height: 200px;
+  width: 100%;
+  padding-top: 50px;
+  background-color: #213F4B;
+  color: #00B9FF;
+  font-size: 16px; }
+  footer h4 {
+    color: #00A2E0; }
+  footer a {
+    color: #00A2E0; }
+  footer .footnav {
+    width: 60%;
+    float: left; }
+    @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
+      footer .footnav {
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 30px; } }
+    footer .footnav li {
+      display: inline;
+      margin: 10px; }
+      footer .footnav li a:hover {
+        text-decoration: none; }
+  footer .shareIcons {
+    float: right;
+    margin-top: -10px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      footer .shareIcons {
+        float: none;
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+        border: 2px solid blue; }
+        footer .shareIcons a {
+          margin: 20px; } }
+    @media (max-width: 767px) {
+      footer .shareIcons {
+        border: 2px solid blue;
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center; }
+        footer .shareIcons a {
+          margin: 20px; } }
+    footer .shareIcons h4 {
+      display: inline-block;
+      font-size: 16px;
+      margin-right: 20px; }
+    footer .shareIcons a {
+      margin-left: 30px; }
+    footer .shareIcons .shareImg {
+      height: 30px;
+      display: inline-block; }
+      footer .shareIcons .shareImg:hover {
+        margin-bottom: 5px; }
+  footer .creator {
+    clear: both;
+    float: left;
+    margin: 30px 0 0 10px; }
+    @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
+      footer .creator {
+        float: none;
+        width: auto;
+        display: block;
+        margin: 30px auto;
+        text-align: center; } }
+  footer .copyright {
+    float: right;
+    font-size: 14px;
+    margin-top: 58px; }
+    @media (max-width: 767px), (min-width: 768px) and (max-width: 991px) {
+      footer .copyright {
+        float: none;
+        width: auto;
+        margin: 30px auto;
+        text-align: center; } }
 
 h1 {
   font-size: 2em;
@@ -370,7 +486,7 @@ h4 {
   line-height: 1.22222;
   /* (22px / 18px */ }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 

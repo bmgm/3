@@ -33,6 +33,7 @@ $(document).ready(function($){
   });
 });
 
+
 // map zoom disabled untill clicked
 $('.map-container')
 	.click(function(){
@@ -41,13 +42,13 @@ $('.map-container')
 			$(this).find('iframe').removeClass('clicked')});
 
 
-// nav bar collapse on click
-$('.nav li a').on('click', function(){
-	$('.navbar-toggle').click() //bootstrap 3.x by Richard
-});
-
 // for active navbar-item status
 $(".nav a").on("click", function(){
    $(".nav").find(".active").removeClass("active");
    $(this).parent().addClass("active");
+});
+
+//toggle button collapse on clock
+$('.nav a').click(function(){
+    $('.navbar-collapse').collapse('hide');
 });

@@ -1,0 +1,61 @@
+@import "util/varfun"
+
+#subjects
+	background-color: #E6E6FA
+	height: 100%
+	width: 100%
+	padding-top: $sectionPadding
+	padding-bottom: $sectionPadding
+	// font-family: 'Montserrat', sans-serif
+	h1,h2
+		font-weight: 700
+
+section#subjects
+	.paper
+		// border: 2px solid blue
+		padding: 20px 20px 20px 40px
+		margin: 10px 30px 30px 0
+		width: 290px
+		height: 100%
+		background-color: rgba(255,255,255,0.4)
+		box-shadow: 10px 15px 30px 14px rgba(63,89,129,0.12)
+		border-radius: 8px
+		&:hover
+			box-shadow: 0px 0px 30px 14px rgba(255, 95, 238,0.20)
+			// +trans(0.2s)
+		h4
+			font-size: 17px
+			font-weight: 600
+			padding-bottom: 5px
+		ul
+			padding-left: 20px
+
+			li
+				font-size: 16px
+
+		.comp
+			color: $compColor
+		.it
+			color: $itColor
+		.etc
+			color: $etcColor
+		.mech
+			color: $mechColor
+
+
+	.row-centered
+		text-align: center
+
+
+	.col-centered
+		display: inline-block
+		float: none
+		/* reset the text-align */
+		text-align: left
+		/* inline-block space fix */
+		margin-right: 0px
+
+
+	.col-fixed
+		/* custom width */
+		width: 320px
